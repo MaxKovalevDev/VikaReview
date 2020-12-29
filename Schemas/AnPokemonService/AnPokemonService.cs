@@ -1,4 +1,4 @@
-namespace Terrasoft.Configuration
+п»їnamespace Terrasoft.Configuration
 {
 	using System;
 	using System.Net;
@@ -40,17 +40,17 @@ namespace Terrasoft.Configuration
 		[WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
 		public string AddPokemon(string name)
 		{
-            //лучше было бы весь код метода обернуть в try/catch
-            //Логичнее было бы getPokemonJSON переместить в AnServiceHelper
+            //Р»СѓС‡С€Рµ Р±С‹Р»Рѕ Р±С‹ РІРµСЃСЊ РєРѕРґ РјРµС‚РѕРґР° РѕР±РµСЂРЅСѓС‚СЊ РІ try/catch
+            //Р›РѕРіРёС‡РЅРµРµ Р±С‹Р»Рѕ Р±С‹ getPokemonJSON РїРµСЂРµРјРµСЃС‚РёС‚СЊ РІ AnServiceHelper
 			string result = getPokemonJSON(name);
-            // Лучше использовать фигурные скобочки
-            // Лучше было бы возвращать какой-нибудь объект с свойством isError и message и если isError = true, то показывать message
+            // Р›СѓС‡С€Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С„РёРіСѓСЂРЅС‹Рµ СЃРєРѕР±РѕС‡РєРё
+            // Р›СѓС‡С€Рµ Р±С‹Р»Рѕ Р±С‹ РІРѕР·РІСЂР°С‰Р°С‚СЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ РѕР±СЉРµРєС‚ СЃ СЃРІРѕР№СЃС‚РІРѕРј isError Рё message Рё РµСЃР»Рё isError = true, С‚Рѕ РїРѕРєР°Р·С‹РІР°С‚СЊ message
 			if (result == string.Empty) return "error";
 			AnPokemonProxy pokemon = JsonConvert.DeserializeObject<AnPokemonProxy>(result);
-            // Несколько раз создается экземпляр класса AnServiceHelper
-            // Логичнее было бы создавать instanse 1 раз, передавать туда UserConnection и потом уже в методы передавать нужные параметры
+            // РќРµСЃРєРѕР»СЊРєРѕ СЂР°Р· СЃРѕР·РґР°РµС‚СЃСЏ СЌРєР·РµРјРїР»СЏСЂ РєР»Р°СЃСЃР° AnServiceHelper
+            // Р›РѕРіРёС‡РЅРµРµ Р±С‹Р»Рѕ Р±С‹ СЃРѕР·РґР°РІР°С‚СЊ instanse 1 СЂР°Р·, РїРµСЂРµРґР°РІР°С‚СЊ С‚СѓРґР° UserConnection Рё РїРѕС‚РѕРј СѓР¶Рµ РІ РјРµС‚РѕРґС‹ РїРµСЂРµРґР°РІР°С‚СЊ РЅСѓР¶РЅС‹Рµ РїР°СЂР°РјРµС‚СЂС‹
 			AnServiceHelper pokemonHelper = new AnServiceHelper(UserConnection, "AnPokemons", "AnName", pokemon.Name);
-            // Лучше использовать фигурные скобочки
+            // Р›СѓС‡С€Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С„РёРіСѓСЂРЅС‹Рµ СЃРєРѕР±РѕС‡РєРё
             if (pokemonHelper.isAdded()) return "exists";
 			pokemonHelper.setImageId(pokemon);
 			AnServiceHelper helper = new AnServiceHelper(UserConnection, "AnLookup_PokemonType", "Name", pokemon.Type);
@@ -87,7 +87,7 @@ namespace Terrasoft.Configuration
 				}
 				return result;
 			}
-            //необработанное исключение, будет непонятно, какая именно произошла ошибка
+            //РЅРµРѕР±СЂР°Р±РѕС‚Р°РЅРЅРѕРµ РёСЃРєР»СЋС‡РµРЅРёРµ, Р±СѓРґРµС‚ РЅРµРїРѕРЅСЏС‚РЅРѕ, РєР°РєР°СЏ РёРјРµРЅРЅРѕ РїСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°
 			catch (Exception e) { return string.Empty; }
 		}
 		#endregion

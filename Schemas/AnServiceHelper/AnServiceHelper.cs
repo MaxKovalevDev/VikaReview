@@ -1,4 +1,4 @@
-namespace Terrasoft.Configuration
+п»їnamespace Terrasoft.Configuration
 {
 	using System;
 	using System.IO;
@@ -8,7 +8,7 @@ namespace Terrasoft.Configuration
 	using Terrasoft.Core.DB;
 	using Terrasoft.Core.Entities;
 	using Terrasoft.Core.ImageAPI;
-    // Лучше AnPokemonHelper или AnPokemonServerUtils
+    // Р›СѓС‡С€Рµ AnPokemonHelper РёР»Рё AnPokemonServerUtils
 	public class AnServiceHelper
 	{
 		private UserConnection userConnection;
@@ -39,9 +39,9 @@ namespace Terrasoft.Configuration
 		#endregion
         
 		#region public methods
-        //Имена public методов должны начинаться с большой буквы
-        //Имена методов должны быть понятны, непонятно, какой Id получает метод getId или что и куда вставляет метод insert
-        //Между методами должна быть пустая строка, так легче читать код
+        //РРјРµРЅР° public РјРµС‚РѕРґРѕРІ РґРѕР»Р¶РЅС‹ РЅР°С‡РёРЅР°С‚СЊСЃСЏ СЃ Р±РѕР»СЊС€РѕР№ Р±СѓРєРІС‹
+        //РРјРµРЅР° РјРµС‚РѕРґРѕРІ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕРЅСЏС‚РЅС‹, РЅРµРїРѕРЅСЏС‚РЅРѕ, РєР°РєРѕР№ Id РїРѕР»СѓС‡Р°РµС‚ РјРµС‚РѕРґ getId РёР»Рё С‡С‚Рѕ Рё РєСѓРґР° РІСЃС‚Р°РІР»СЏРµС‚ РјРµС‚РѕРґ insert
+        //РњРµР¶РґСѓ РјРµС‚РѕРґР°РјРё РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РїСѓСЃС‚Р°СЏ СЃС‚СЂРѕРєР°, С‚Р°Рє Р»РµРіС‡Рµ С‡РёС‚Р°С‚СЊ РєРѕРґ
 		public string getId()
 		{
 			EntitySchemaQuery esq = new EntitySchemaQuery(userConnection.EntitySchemaManager, sourceSchemaName);
@@ -66,21 +66,21 @@ namespace Terrasoft.Configuration
 		}
 		public void insert()
 		{
-            /* правильнее вот так
+            /* РїСЂР°РІРёР»СЊРЅРµРµ РІРѕС‚ С‚Р°Рє
              bool isAdded = isAdded();
              if(isAdded){
                 return; 
             }
              */
 			if (isAdded()) return;
-            /*Правильнее вот так
+            /*РџСЂР°РІРёР»СЊРЅРµРµ РІРѕС‚ С‚Р°Рє
                  Insert insertMove = new Insert(userConnection)
                     .Into(sourceSchemaName)
                     .Set("Name", Column.Parameter(rightExpressionParameterValue));
              */
             var insertMove = new Insert(userConnection).Into(sourceSchemaName).Set("Name", Column.Parameter(rightExpressionParameterValue));
 			insertMove.Execute();
-            // непонятно, зачем тут Sselect, если результат нигде не используется
+            // РЅРµРїРѕРЅСЏС‚РЅРѕ, Р·Р°С‡РµРј С‚СѓС‚ Sselect, РµСЃР»Рё СЂРµР·СѓР»СЊС‚Р°С‚ РЅРёРіРґРµ РЅРµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ
             var selectMove = new Select(userConnection)
 				.Column("Id")
 				.From(sourceSchemaName)
@@ -96,7 +96,7 @@ namespace Terrasoft.Configuration
         /// <param name="sourceExpression1">value to insert in 1st column</param>	
         /// <param name="sourceColumnAlias2">name of the 2nd column</param>	
         /// <param name="sourceExpression2">value to insert in 2nd column</param>	
-        //Непонятны названия переменных, если sourceExpression1 и sourceExpression2 - это Id, то тип данных должен быть Guid
+        //РќРµРїРѕРЅСЏС‚РЅС‹ РЅР°Р·РІР°РЅРёСЏ РїРµСЂРµРјРµРЅРЅС‹С…, РµСЃР»Рё sourceExpression1 Рё sourceExpression2 - СЌС‚Рѕ Id, С‚Рѕ С‚РёРї РґР°РЅРЅС‹С… РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ Guid
         public void insert(string sourceSchemaName, string sourceColumnAlias1, string sourceExpression1, string sourceColumnAlias2, string sourceExpression2)
 		{
 			var insertPM = new Insert(userConnection).Into(sourceSchemaName)
@@ -108,7 +108,7 @@ namespace Terrasoft.Configuration
 		/// method to insert new pokemon to DB using properties of AnPokemonProxy object
 		/// </summary>
 		/// <param name="pokemon">object which needs to be inserted</param>	
-        // Логичнее было бы назвать метод CreatePokemon или InsertPokemon, не вижу смысла использовать перегрузку
+        // Р›РѕРіРёС‡РЅРµРµ Р±С‹Р»Рѕ Р±С‹ РЅР°Р·РІР°С‚СЊ РјРµС‚РѕРґ CreatePokemon РёР»Рё InsertPokemon, РЅРµ РІРёР¶Сѓ СЃРјС‹СЃР»Р° РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РїРµСЂРµРіСЂСѓР·РєСѓ
 		public void insert(AnPokemonProxy pokemon)
 		{
 			var insertPok = new Insert(userConnection).Into(sourceSchemaName)
@@ -124,7 +124,7 @@ namespace Terrasoft.Configuration
         /// method to insert image from url to DB and set the relevant property of pokemon object
         /// </summary>
         /// <param name="pokemon">object which property needs to be set</param>	
-        // Правильнее
+        // РџСЂР°РІРёР»СЊРЅРµРµ
         // public Guid InsertImage
         public void setImageId(AnPokemonProxy pokemon)
 		{
@@ -132,10 +132,10 @@ namespace Terrasoft.Configuration
 			WebRequest imageRequest = WebRequest.Create(pokemon.ImageURL);
 			MemoryStream Image = new MemoryStream();
 			imageRequest.GetResponse().GetResponseStream().CopyTo(Image);
-            //.ToString() - неправильно, т.к., если метод возвращает Guid, то работать надо с Guid, а не string
-            //"image/png" - неправильно, т.к. изображение может быть в другом формате, правильнее было бы получить Mime type из расширения
+            //.ToString() - РЅРµРїСЂР°РІРёР»СЊРЅРѕ, С‚.Рє., РµСЃР»Рё РјРµС‚РѕРґ РІРѕР·РІСЂР°С‰Р°РµС‚ Guid, С‚Рѕ СЂР°Р±РѕС‚Р°С‚СЊ РЅР°РґРѕ СЃ Guid, Р° РЅРµ string
+            //"image/png" - РЅРµРїСЂР°РІРёР»СЊРЅРѕ, С‚.Рє. РёР·РѕР±СЂР°Р¶РµРЅРёРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РІ РґСЂСѓРіРѕРј С„РѕСЂРјР°С‚Рµ, РїСЂР°РІРёР»СЊРЅРµРµ Р±С‹Р»Рѕ Р±С‹ РїРѕР»СѓС‡РёС‚СЊ Mime type РёР· СЂР°СЃС€РёСЂРµРЅРёСЏ
             pokemon.ImageId = imageApi.Save(Image, "image/png", $"An{pokemon.Name}Image").ToString();
-            // Правильнее 
+            // РџСЂР°РІРёР»СЊРЅРµРµ 
             // Guid result = imageApi.Save(Image, "image/png", $"An{pokemon.Name}Image");
             // reurn result;
         }
