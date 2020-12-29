@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "65109a43-ac79-4a9a-959e-de7435835c8c",
+    "Name": "AnLookup_PokemonType",
+    "ModifiedOnUtc": "\/Date(1608205093000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тип покемона"
+  }
+}

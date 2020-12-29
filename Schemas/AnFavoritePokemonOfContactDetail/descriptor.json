@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "35c83457-01ee-424c-9809-64cf7a8ffd08",
+    "Name": "AnFavoritePokemonOfContactDetail",
+    "ModifiedOnUtc": "\/Date(1608893966000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема детали: \"Любимый покемон контакта\""
+  }
+}

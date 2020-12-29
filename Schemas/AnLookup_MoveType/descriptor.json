@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "2225ed69-8a3f-41bb-886f-164da72e73ab",
+    "Name": "AnLookup_MoveType",
+    "ModifiedOnUtc": "\/Date(1608205059000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тип движения"
+  }
+}

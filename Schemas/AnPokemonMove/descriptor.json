@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "b22a51c2-0f2c-4292-847c-221931a68abf",
+    "Name": "AnPokemonMove",
+    "ModifiedOnUtc": "\/Date(1608553397000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Движение покемона"
+  }
+}

@@ -1,0 +1,36 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "1d4419d6-90e7-4d5d-9a46-f6670058d7b1"
+        },
+        {
+          "SchemaColumnUId": "08ccfffd-cb3e-47c3-9729-1d043a5812e4",
+          "Value": "\/Date(1608212008360+0300)\/"
+        },
+        {
+          "SchemaColumnUId": "d245dcaf-23bd-4b73-8718-26fdf38b443b",
+          "Value": "pokeIcon.png"
+        },
+        {
+          "SchemaColumnUId": "1e236958-f206-4fde-8a0e-6783fc223424",
+          "Value": "iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAACA0lEQVRIie2Wu1IUQRSG/xZD3cgAZqVAJeAlNMeF1RQvD0CBkYCpFk9gpj6BtV6qtJSMyCLiASwTCZQihd2EdXf5COYgs23P0LOLlgF/VVdP9Tmnv75OH+lc/0gu1hEYl3RHUk3SpKRxM/2QtC3ps6QPzrmfZzIyoAq8BDqcrh7QACaGhdaBZgTQVxOYGxT6yGYwqHrAUlnoDNAdApqF12OhVQZb3jztA2M+50KA/UzS5VJLVKyKpKd+Y991Ir0y25JGzhAsSV1Jk865neMGf8Z3/wJUki4q/Qf8lg+eieikLWlFUmJl1dpO0+1cC/At4rAsB+JWI+K+FoFjTvOY+W4CX+w7iYhrZlmhUy1JFedJUsvzOZSE19YKxFVCAB+8a/Uf907SltUPJMk5d9M5d8vaHno+WSVW7wRsqYB1W5b5gK1mtgPb08TKE6Bttlog7r7ZPhWBF83pdY59rWAP13JiGmZfKAJfJX3+2sD1HJ8asAG0rGyEZmq+U9ZXB6jmgs35lY3wbaFjhID31teLGOeEk2v1eAjosvWxB4zGBs2RPmndQeAG7VofwW0oCl7iJBF4B9yIiJnKLG8PWCw76OOOZknfU+yQNIB7wDRwycq0XZk3wK/M8pabaQB+BXhOXLLXIU0MQz+gPpVJb6uS6pJmJV1Tf3r7XWl6+zH75p7rv9AR6+GpzvuXEeQAAAAASUVORK5CYII="
+        },
+        {
+          "SchemaColumnUId": "be95e737-14e9-4253-b0c4-e280da05434d",
+          "Value": "image/png"
+        },
+        {
+          "SchemaColumnUId": "b3cd8485-7bd8-4b70-b2dd-bc41e45e9992",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "90801d7c-a189-4afe-9c3a-a202fbf242d8",
+          "Value": "null"
+        }
+      ]
+    }
+  ]
+}

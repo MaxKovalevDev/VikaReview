@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Покемоны" />
+			<Item Name="Columns.AnHeight.Caption" Value="Высота" />
+			<Item Name="Columns.AnImageLink.Caption" Value="Изображение" />
+			<Item Name="Columns.AnLookup_PokemonType.Caption" Value="Тип покемона" />
+			<Item Name="Columns.AnName.Caption" Value="Название" />
+			<Item Name="Columns.AnWeight.Caption" Value="Вес" />
+			<Item Name="Columns.AnWeightAndHeight.Caption" Value="Рост х Вес" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "e10b9b9f-616c-41f9-bbc6-9c7fb2b8ff28",
+    "Name": "AnPokemonMoveDetail",
+    "ModifiedOnUtc": "\/Date(1608654038000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема детали: \"Движение покемона\""
+  }
+}

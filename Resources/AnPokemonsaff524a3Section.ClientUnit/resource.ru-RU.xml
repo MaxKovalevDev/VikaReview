@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Схема раздела: &quot;Покемоны&quot;" />
+			<Item Name="LocalizableStrings.AddPokemonButtonCaption.Value" Value="Добавить покемона из API" />
+			<Item Name="LocalizableStrings.AlreadyAdded.Value" Value="Такой покемон уже добавлен" />
+			<Item Name="LocalizableStrings.Caption.Value" Value="Покемоны" />
+			<Item Name="LocalizableStrings.DialogTitle.Value" Value="Имя покемона" />
+			<Item Name="LocalizableStrings.HowManyLikes.Value" Value="Количество лайков: " />
+			<Item Name="LocalizableStrings.InputBoxCaption.Value" Value="Введите имя" />
+			<Item Name="LocalizableStrings.LikesButtonCaption.Value" Value="Сколько лайков" />
+			<Item Name="LocalizableStrings.NotExist.Value" Value="Такого покемона не существует" />
+			<Item Name="LocalizableStrings.NotSelected.Value" Value="Выберите покемона" />
+			<Item Name="LocalizableStrings.ResultOk.Value" Value="Покемон успешно добавлен" />
+		</Items>
+	</Group>
+</Resources>

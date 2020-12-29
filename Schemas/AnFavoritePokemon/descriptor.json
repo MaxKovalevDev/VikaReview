@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "47d53af7-03b2-4be8-9c9d-6f967b5faa84",
+    "Name": "AnFavoritePokemon",
+    "ModifiedOnUtc": "\/Date(1608551523000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Объект 1"
+  }
+}

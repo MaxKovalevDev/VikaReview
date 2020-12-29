@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "38e9cf63-be5a-4b14-a16e-5c3dd57e85a8",
+    "Name": "AnSendEmailProcess",
+    "ModifiedOnUtc": "\/Date(1609150814000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Отправка email"
+  }
+}

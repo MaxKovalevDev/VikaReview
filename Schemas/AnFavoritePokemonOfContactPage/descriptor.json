@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "e169557a-f955-4eb5-8929-a49ff8c22c67",
+    "Name": "AnFavoritePokemonOfContactPage",
+    "ModifiedOnUtc": "\/Date(1609148921000)\/",
+    "Parent": {
+      "UId": "d3cc497c-f286-4f13-99c1-751c468733c0",
+      "Name": "BasePageV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Карточка схемы: \"Любимый покемон контакта\""
+  }
+}

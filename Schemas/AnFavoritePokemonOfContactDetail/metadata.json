@@ -1,0 +1,9 @@
+= MetaData.Schema.UId "35c83457-01ee-424c-9809-64cf7a8ffd08"
+= MetaData.Schema.A2 "AnFavoritePokemonOfContactDetail"
+= MetaData.Schema.A5 "ac4f7f0f-d5d5-4e8b-997a-a2f7c46f033e"
+= MetaData.Schema.B2.["8f7c31a4-b656-47c9-a503-a72d0b3dd077"].A4 "35c83457-01ee-424c-9809-64cf7a8ffd08"
+= MetaData.Schema.B6 "1297fcd8-96b4-4b48-9530-9856b4ada55f"
+= MetaData.Schema.B8 "7.16.4.1731"
+= MetaData.Schema.HD5 []
+- MetaData.Schema.B7
++ MetaData.Schema.B7 false

@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "a7a77be9-8783-4f3a-b1b1-493b1a212ad5",
+    "Name": "AnDateApplierSubProcess",
+    "ModifiedOnUtc": "\/Date(1608308432000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Изменение имени контакта"
+  }
+}

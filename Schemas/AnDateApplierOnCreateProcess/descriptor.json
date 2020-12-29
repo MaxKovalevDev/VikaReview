@@ -1,0 +1,9 @@
+﻿{
+  "Descriptor": {
+    "UId": "a5f07acb-a75b-44b2-ba6e-3081f0c24ddf",
+    "Name": "AnDateApplierOnCreateProcess",
+    "ModifiedOnUtc": "\/Date(1608532630000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Контакт + дата"
+  }
+}

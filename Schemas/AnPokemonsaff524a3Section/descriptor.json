@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "6e174d35-8ee3-40b9-932e-7caf886d0567",
+    "Name": "AnPokemonsaff524a3Section",
+    "ModifiedOnUtc": "\/Date(1609149246000)\/",
+    "Parent": {
+      "UId": "7912fb69-4fee-429f-8b23-93943c35d66d",
+      "Name": "BaseSectionV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема раздела: \"Покемоны\""
+  }
+}

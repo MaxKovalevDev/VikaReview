@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Страница редактирования: &quot;Покемоны&quot;" />
+			<Item Name="Images.ba9cf0c7-bcb9-4bd3-878c-59d968a23e92.Image" Type="Image" Value="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" />
+			<Item Name="LocalizableStrings.AddPokemonButtonCaption.Value" Value="Добавить малыша" />
+			<Item Name="LocalizableStrings.AllPokemonsButtonCaption.Value" Value="Все покемошки" />
+			<Item Name="LocalizableStrings.AnFavoritePokemonDetailba9bf27fDetailCaptionOnPage.Value" Value="Любимый покемон" />
+			<Item Name="LocalizableStrings.AnFavoritePokemonOfContactDetail10253d8bDetailCaptionOnPage.Value" Value="Любимый покемон контакта" />
+			<Item Name="LocalizableStrings.ESNTabGroup6ba98151GroupCaption.Value" Value="Внешний вид" />
+			<Item Name="LocalizableStrings.HowManyLikes.Value" Value="Количество лайков: " />
+			<Item Name="LocalizableStrings.LikesButtonCaption.Value" Value="Скольким юзерам нравится" />
+			<Item Name="LocalizableStrings.WeightLessThanZero.Value" Value="Вес не может быть меньше нуля" />
+		</Items>
+	</Group>
+</Resources>
