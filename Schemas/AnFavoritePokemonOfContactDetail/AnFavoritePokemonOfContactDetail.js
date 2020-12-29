@@ -41,6 +41,7 @@ define("AnFavoritePokemonOfContactDetail", ["LookupMultiAddMixin"], function() {
 			},
 			getAddRecordButtonVisible: function() {
 				var cardPageName = this.get("CardPageName");
+				//Лучше не писать в одну строку
 				if (cardPageName!=="AnPokemons1Page"){return this.getToolsVisible();}
 			},
 			onCardSaved: function() {

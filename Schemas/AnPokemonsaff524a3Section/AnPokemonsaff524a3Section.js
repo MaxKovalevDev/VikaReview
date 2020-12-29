@@ -48,14 +48,17 @@ define("AnPokemonsaff524a3Section", ["RightUtilities","ServiceHelper"], function
 		]/**SCHEMA_DIFF*/,
 		methods: {
 			init: function(){
+				//Лучше вынести в отдельный метод
 				RightUtilities.checkCanExecuteOperations(["AnCanAddPokemon"],function(result) {
 					this.set("IsEnabled", result.AnCanAddPokemon);
 				},this);
 				this.callParent(arguments);
 			},
 			addRecord: function(){
+				//Не соблюдена табуляция
 			var controlConfig = {
 					text: {
+						//Не соблюдена табуляция
 					dataValueType: Terrasoft.DataValueType.TEXT,
 					caption:this.get("Resources.Strings.DialogTitle")
 					}

@@ -22,6 +22,7 @@ define("AnPokemons1Page", [], function() {
 					"filters": [
 						function() {
 						var filterGroup = Ext.create("Terrasoft.FilterGroup");
+						//лучше давать осмысленное название фильтру
 						filterGroup.add("f",
 						Terrasoft.createColumnFilterWithParameter(Terrasoft.ComparisonType.NOT_START_WITH,"Name", "f"));
 						return filterGroup;
@@ -30,6 +31,7 @@ define("AnPokemons1Page", [], function() {
 				}
 			}
 		},
+		//не должно быть закомменченных кусков кода
 		/*messages: {
 			"Get": {
 				mode: this.Terrasoft.MessageMode.PTP,
@@ -68,6 +70,7 @@ define("AnPokemons1Page", [], function() {
 			}
 		}/**SCHEMA_DETAILS*/,
 		methods: {
+			//между методами должна быть пустая строка - то облегчает чтение
 			addWeightToHeight: function() {
 				var weight = this.get("AnWeight");
 				if (!weight) {
@@ -121,6 +124,7 @@ define("AnPokemons1Page", [], function() {
 			getAddRecordButtonVisible: function() {
 				return this.getToolsVisible();
 			},
+			//не должно быть закомменченных кусков кода
 			/*
 			onAllPokemonsButtonClick: function() {
 				const esq = this.Ext.create("Terrasoft.EntitySchemaQuery", {rootSchemaName: "AnPokemons"});

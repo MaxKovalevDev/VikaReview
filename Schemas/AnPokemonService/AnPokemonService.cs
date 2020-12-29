@@ -1,4 +1,4 @@
-namespace Terrasoft.Configuration
+﻿namespace Terrasoft.Configuration
 {
 	using System;
 	using System.Net;
@@ -40,11 +40,18 @@ namespace Terrasoft.Configuration
 		[WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
 		public string AddPokemon(string name)
 		{
+            //лучше было бы весь код метода обернуть в try/catch
+            //Логичнее было бы getPokemonJSON переместить в AnServiceHelper
 			string result = getPokemonJSON(name);
+            // Лучше использовать фигурные скобочки
+            // Лучше было бы возвращать какой-нибудь объект с свойством isError и message и если isError = true, то показывать message
 			if (result == string.Empty) return "error";
 			AnPokemonProxy pokemon = JsonConvert.DeserializeObject<AnPokemonProxy>(result);
+            // Несколько раз создается экземпляр класса AnServiceHelper
+            // Логичнее было бы создавать instanse 1 раз, передавать туда UserConnection и потом уже в методы передавать нужные параметры
 			AnServiceHelper pokemonHelper = new AnServiceHelper(UserConnection, "AnPokemons", "AnName", pokemon.Name);
-			if (pokemonHelper.isAdded()) return "exists";
+            // Лучше использовать фигурные скобочки
+            if (pokemonHelper.isAdded()) return "exists";
 			pokemonHelper.setImageId(pokemon);
 			AnServiceHelper helper = new AnServiceHelper(UserConnection, "AnLookup_PokemonType", "Name", pokemon.Type);
 			helper.insert();
@@ -80,6 +87,7 @@ namespace Terrasoft.Configuration
 				}
 				return result;
 			}
+            //необработанное исключение, будет непонятно, какая именно произошла ошибка
 			catch (Exception e) { return string.Empty; }
 		}
 		#endregion
